@@ -3,6 +3,11 @@ flask
 flask_mysqldb
 sendgrid
 sendmail
+pytz
+chatterbot==1.0.1
+
+
+
 
 
 
