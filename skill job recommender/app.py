@@ -7,6 +7,7 @@ from chatterbot.trainers import ChatterBotCorpusTrainer
 
 import MySQLdb.cursors
 import re
+import nltk
 from sendemail import sendmail,sendgridmail
 import smtplib
 
