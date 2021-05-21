@@ -12,6 +12,7 @@ RUN set -e; \
                 postgresql-dev \
         ;
 COPY requirements.txt /app
-RUN pip install -r requirements.txt
 RUN pip install --user -U nltk
+RUN python -m nltk.downloader all
+RUN pip install -r requirements.txt
 CMD ["python","app.py"]
